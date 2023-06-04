@@ -45,4 +45,28 @@ body .mainContainer .subtitlebar .subTitle {
 }
 body .mainContainer .middleContainer {
   background-color: #8FF9FF;
+}
+body .mainContainer .middleContainer h3 {
+  margin: 0px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 0.5rem;
+}
+body .mainContainer .middleContainer .FlexBox {
+  display: flex;
+}
+body .mainContainer .middleContainer .myImage {
+  width: 20%;
+  height: 20%;
+  margin: 5px;
+}
+body .mainContainer .gridContainer {
+  background-color: #8FF9FF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+body .mainContainer .gridContainer .item {
+  margin: 5px;
+  background-color: #0FB4BE;
 }/*# sourceMappingURL=styles.css.map */
