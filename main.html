@@ -2,40 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Projectauftrag</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
 </head>
 <body>
     <header>
         <h1 class="title">Marco Mettler</h1>
         <nav>
-            <a href="">Über mich</a>
-            <p class="text"> | </p>
-            <a href="">Fähigkeiten</a>
-            <p class="text"> | </p>
-            <a href="">Portfolio</a>
-            <p class="text"> | </p>
-            <a href="">Kontakt</a>
+            <a href="#ubermich">Über mich</a>
+            <a href="#fahigkeiten">Fähigkeiten</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#kontakt">Kontakt</a>
         </nav>
     </header>
 
+    <div id="ubermich"></div>
     <div class="maincontainer">
         <div class="subtitleBar">
             <img class="logo" src="images/187.jpg" alt="">
             <h2>Über mich</h2>
         </div>
         <div class="subcontainer">
-            <img class="imageMe" src="/images/bossaura.png" alt="Boss">
-            <div>
-                <h3>Allgemein</h3>
-                <p class="text">Halt die Fresse du Hurensohn</p>
+            <img class="imageMe" src="images/bossaura.png" alt="Boss">
+            <div class="textContainer">
+                <h3 class="titleLeft">Allgemein</h3>
+                <p class="text">Ich bin Marco Mettler.</p>
+                <p class="text">Ich lebe im Kanton Thurgau genauer gesagt in Horn am Bodensee.</p>
+                <p class="text">Momentan bin ich 16 Jahre alt und mache eine Lehre zum Informatiker Applikationsentwicklung EFZ in der Abraxas Informatik AG in St.Gallen.</p>
             </div>
-            
+        </div>
+        <div class="space"></div>
+        <div class="subcontainer">
+            <img class="imageMe" src="images/shoot.png" alt="Boss">
+            <div class="textContainer">
+                <h3 class="titleLeft">Hobbies</h3>
+                <p class="text">Ich bin seit 6 Jahren Jungschütze und Mitglied im Schützenverein Horn ausserdem gehe ich ins Fitnesstudio.</p>
+                <p class="text">Das Schiessen ist meine Lieblingsportart da sie Konzentration und Übung erfordert.</p>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="subcontainer">
+            <img class="imageMe" src="images/gang.png" alt="Boss">
+            <div class="textContainer">
+                <h3 class="titleLeft">Strassenbande</h3>
+                <p class="text">Mit meinen Jungs gehe ich gerne mal einen rein Saufen oder auf irgendeinen Bauernhof eine Party feiern.</p>
+            </div>
         </div>
     </div>
 
+    <div id="fahigkeiten"></div>
     <div class="maincontainer">
         <div class="subtitleBar">
             <img class="logo" src="images/187.jpg" alt="">
@@ -43,26 +62,27 @@
         </div>
         <div class="gridContainer">
             <div class="item">
-                <h2>test</h2>
+                <h2>C</h2>
             </div>
             <div class="item">
-                <h2>test</h2>
+                <h2>Java</h2>
             </div>
             <div class="item">
-                <h2>test</h2>
+                <h2>Angular</h2>
             </div>
             <div class="item">
-                <h2>test</h2>
+                <h2>Html/CSS</h2>
             </div>
             <div class="item">
-                <h2>test</h2>
+                <h2>mySQL</h2>
             </div>
             <div class="item">
-                <h2>test</h2>
+                <h2>C#</h2>
             </div>
         </div>
     </div>
 
+    <div id="portfolio"></div>
     <div class="maincontainer">
         <div class="subtitleBar">
             <img class="logo" src="images/187.jpg" alt="">
@@ -70,32 +90,35 @@
         </div>
         <div class="subcontainer2">
             <div class="subContainerBar">
-                <h4>Schiessen</h4>
+                <h4>Projekt 1: Java</h4>
             </div>
             <div class="flexBox">
-                <img class="image" src="images/shoot.png" alt="">
-                <p class="text">Halt die Fresse du Hurensohn</p>
+                <img class="image" src="images/java.jpg" alt="">
+                <p class="text">Eines meiner Projekte war das Erlernen der Programmiersprache Java mithilfe eines Buches. In diesem Buch begann ich von vorne und lernte von den Grundlagen des Programmierens mit Java alles bis hin zu komplexeren Themen. Dieses Buch war sehr gross und hatte einen Umfang von mehreren hundert Seiten. Dies war aber kein Problem da das Buch sehr interessant geschrieben war und gefüllt war mit Programmier- und Denk- Aufgaben. Auf dem Wissen dieses Buches baut eigentlich auch alles auf was ich momentan im Lehrbetrieb machen muss. Mit diesem Buch begann meine Ausbildung als Informatiker so richtig da es die erste Programmiersprache war in der ich umfangreiche Kenntnisse besitze. </p>
             </div>
         </div>
         <div class="subcontainer2">
             <div class="subContainerBar">
-                <h4>Gym</h4>
+                <h4>Projekt 2 Tetris:</h4>
             </div>
-            <div class="flexBox">    
-                <p class="text">Halt die Fresse du Hurensohn</p>
+            <div class="flexBox">
+                <img class="image" src="images/tetris.png" alt="">  
+                <p class="text">Als ich das Buch durchgearbeitet habe hatte ich ein relativ gutes Verständnis von Java. Daher konnte ich mir danach ein eigenes Projekt ausdenken und dieses dann umsetzen. Ich dachte zuerst an einen Auto Simulator welcher ausrechnet welches Auto auf einer bestimmten Strecke gewinne würde. Jedoch fand ich das dann doch zu langweilig und entschied mich dann zu versuchen Tetris nach zu bauen. Ich begann zuerst mit der Planung wie die Logik des Spiels aussehen sollte. Dies war eigentlich der schwierigste Teil des Projektes da die Logik dahinter nicht sehr einfach ist. Dafür war die Umsetzung des Projektes danach nicht sehr schwer daher denke ich das ein gutes Konzept ein sehr wichtiger Teil eines Auftrags / Projektes ist. Nach der Vollendung des Spiels präsentierte ich mein Projekt noch den anderen Lehrlingen und zeigte Ihnen wie es aufgebaut ist. Ich habe mir das Projekt selbst ausgedacht, es geplant danach umgesetzt und auch den anderen Lehrlingen gezeigt. </p>
             </div>
         </div>
         <div class="subcontainer2">
             <div class="subContainerBar">
-                <h4>Nachts um drei vor dem Späti</h4>
+                <h4>Projekt 3: Party</h4>
             </div>
             <div class="flexBox">    
                 <img class="image" src="images/saufen.png" alt="">
-                <p class="text">Halt die Fresse du Hurensohn</p>
+                <p class="text">Dieses Projekt hat zwar nicht viel mit meiner Lehre zu tun jedoch schreibe ich trotzdem darüber da dies bis jetzt das beste Projekt meines Lebens ist. 2 Monate bevor mein bester Freund 16 Jahre alt wurde haben er, ein paar andere Freunde und ich entschieden eine Party an seiem Geburtstag im November zu machen. Wir haben den alten Bauernhof in dem seine Grosseltern gelebt haben leergeräumt und alles geputzt. Danach haben wir Musikanlagen und Nebelwerfer besorgt und alles für eine Party hergerichtet. Insgesamt haben wir alleine für Alkohol über 300 Franken ausgegeben. In der Nacht der Party herschte regelrechter Kriegszustand da etwa 60 Leute da waren, trotzdem war es die beste Nach meines Lebens.</p>
+                <p class="text">Da dies die beste Party unseres Lebens war haben wir eine neue geplant welche am 16.06 stattfinden wird und wir bis jetzt über 100 Anmeldungen haben.</p>
             </div>
         </div>
     </div>
 
+    <div id="kontakt"></div>
     <div class="maincontainer">
         <div class="subtitleBar">
             <img class="logo" src="images/187.jpg" alt="">
@@ -110,9 +133,5 @@
             </form>
         </div>
     </div>
-
-    <footer class="footer">
-
-    </footer>
 </body>
 </html>
