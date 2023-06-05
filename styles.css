@@ -3,21 +3,23 @@
   font-size: 30px;
 }
 
-body {
-  background-color: #C0FBFF;
-}
-body .text {
-  font-size: 0.5rem;
+p {
   margin: 0px;
   padding: 5px;
+  font-size: 0.5rem;
+}
+
+body {
+  background-color: black;
 }
 body header {
-  background-color: #0FB4BE;
+  border-radius: 5px;
   display: flex;
+  justify-content: space-between;
+  background-color: #0FB4BE;
 }
-body header .title {
-  margin: 0px;
-  padding: 5px;
+body header h1 {
+  margin: 10px;
 }
 body header nav {
   display: flex;
@@ -26,47 +28,112 @@ body header nav {
 body header nav a {
   text-decoration: none;
   color: black;
+  margin: 5px;
+  font-size: 0.5rem;
+}
+body header nav .text {
+  font-size: 0.5rem;
+}
+body .maincontainer {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #0FB4BE;
+  padding: 5px;
+}
+body .maincontainer h2 {
+  margin: 0px;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+body .maincontainer h3 {
+  margin: 0px;
   padding: 5px;
   font-size: 0.5rem;
 }
-body .mainContainer {
-  margin-top: 10px;
-  background-color: #0FB4BE;
-  padding: 10px;
-}
-body .mainContainer .subtitlebar {
-  background-color: #8FF9FF;
-  margin-bottom: 10px;
-}
-body .mainContainer .subtitlebar .subTitle {
+body .maincontainer h4 {
+  border-radius: 5px;
   font-size: 0.8rem;
   margin: 0px;
   padding: 5px;
-}
-body .mainContainer .middleContainer {
   background-color: #8FF9FF;
 }
-body .mainContainer .middleContainer h3 {
-  margin: 0px;
-  padding-top: 5px;
-  padding-left: 5px;
-  font-size: 0.5rem;
+body .maincontainer .subtitleBar {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: #8FF9FF;
 }
-body .mainContainer .middleContainer .FlexBox {
+body .maincontainer .subcontainer {
+  display: flex;
+  margin-top: 5px;
+  padding: 50px;
+  align-self: flex-start;
+}
+body .maincontainer .subcontainer .imageMe {
+  border-radius: 5px;
+  height: 20%;
+  width: 20%;
+}
+body .maincontainer .subcontainer2 {
+  margin-top: 5px;
+  padding: 5px;
+}
+body .maincontainer .gridContainer {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+body .maincontainer .gridContainer .item {
+  border-radius: 5px;
+  height: 100px;
+  background-color: #8FF9FF;
+  display: flex;
+  justify-content: center;
+}
+body .maincontainer .flexBox {
+  padding: 50px;
   display: flex;
 }
-body .mainContainer .middleContainer .myImage {
-  width: 20%;
-  height: 20%;
-  margin: 5px;
+body .maincontainer .flexBox .image {
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 30%;
 }
-body .mainContainer .gridContainer {
-  background-color: #8FF9FF;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+
+.contact-form {
+  margin-top: 20px;
 }
-body .mainContainer .gridContainer .item {
-  margin: 5px;
-  background-color: #0FB4BE;
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button[type=submit] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-form button[type=submit]:hover {
+  background-color: #45a049;
 }/*# sourceMappingURL=styles.css.map */
